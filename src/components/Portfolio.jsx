@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-duplicate-props */
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -719,10 +720,11 @@ const Portfolio = () => {
                          `0 0 0 0 transparent`
                        ]
                      }}
-                     transition={{
+                     transition2={{
                        duration: 2,
                        repeat: Infinity,
-                       delay: index * 0.5
+                       delay: index * 0.5,
+                       type: "spring"
                      }}
                    />
 
@@ -1294,4 +1296,3 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
-
